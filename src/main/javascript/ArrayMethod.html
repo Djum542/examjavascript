@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        const fruits = ["Banana", "Orange", "Apple", "Mango"];
+        // tính độ dài mảng
+        window.alert(fruits.length);
+        // ép về kiểu chuỗi String
+        window.alert(fruits.toString());
+        // nối tất cả các phần tử mảng thành một chuỗi.
+        window.alert(fruits.join("*"));
+        // xóa giá trị cuối cùng của mảng.
+        window.alert(fruits.pop());
+        // thêm giá trị vào cuối mảng
+        window.alert(fruits.push("Kiwi"));
+        // loại bỏ phần tử mảng đầu tiên và chuyển các mục khác sang chỉ mục thấp hơn.
+        window.alert(fruits.shift());
+        document.getElementById('demo').innerHTML = fruits;
+        // thêm phần tử mới vào đầu mảng và bỏ phần dịch chuyển các phần tử.
+        window.alert(fruits.unshift("Lemon"));
+        // thay thế phần tử.
+        window.alert(fruits[0] = "Kwi");
+        // dùng delete để xóa phần tử trong mảng.
+        delete fruits[0];
+        window.alert(fruits);
+        // tạo mẩng mới bằng cách hợp nhất các mảng hiện có.
+        const y = ['a','b','v','d'];
+        window.alert(fruits.concat(y));
+        // sao chép các phần tử khác
+        window.alert(fruits.copyWithin(2,0));
+        // thêm các mục mới vào một mảng.
+        window.alert(fruits.splice(2,0,"Lemon", "Kiwi"));
+        // xóa  phần tử  với splice 0 là thứ tự phần tử 1 là số lượng cần loại bỏ.
+        window.alert(fruits.splice(0,1));
+        // cắt một phần của mảng thành mảng mới.
+        window.alert(fruits.slice(1));
+        // 
+    </script>
+</body>
+</html>

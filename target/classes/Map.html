@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const fruits = new Map();
+        let text = "";
+        // Set Map Values
+        fruits.set("apples", 500);
+        fruits.set("bananas", 300);
+        fruits.set("oranges", 200);
+        fruits.get("apples");
+        fruits.size;
+        fruits.delete("apples");
+        fruits.has("apples");
+        fruits.forEach(function(value, key){
+            text += key += value;
+        });
+        fruits.entries();
+        window.alert(typeof"John");
+        function isArray(myArray) {
+            return myArray.contructor.toString().indexOf("Arrays") > -1;
+        }
+    </script>
+</body>
+</html>

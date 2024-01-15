@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Create a Set
+        const letters = new Set();
+
+        // Create Variables
+        const a = "a";
+        const b = "b";
+        const c = "c";
+        let text = "";
+        // Add Variables to the Set
+        letters.add(a);
+        letters.add(b);
+        letters.add(c);
+        letters.delete(a);
+        letters.has(a);
+        letters.forEach(function(value){
+             text += value;
+        });
+        letters.values();
+    </script>
+</body>
+</html>

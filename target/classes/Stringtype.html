@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="charat"></p>
+    <p id="charcode"></p>
+    
+    <script>
+        let text = "zaqwsxcderfvbgtyhnmjuiklo";
+        let leng = text.length;
+        //while(0){
+            // tính số phần tử của mảng.
+        document.getElementById('demo').innerHTML = text.length;
+        // lấy giá trị đầu chuỗi
+        document.getElementById('charat').innerHTML = text.charAt(0);
+        // code của UTF-16
+        document.getElementById('charcode').innerHTML = text.charCodeAt(0);
+        //}
+        // lấy từ ký tự ... đến ... có thể nhận giá trị âm
+        document.getElementById('').innerHTML = text.slice(5,10);
+        // lấy ký tự từ ... đến ... lấy từ 0 trở lên.
+        document.getElementById('').innerHTML = text.substr(8,12);
+        // viên hoa toàn bộ
+        document.getElementById('').innerHTML = text.toUpperCase();
+        // viết thường tất cả
+        document.getElementById('').innerHTML = text.toLowerCase();
+        // nối chuỗi.
+        let text1 = "Hello";
+        let text2 = "World!";
+        let text3 = text1.concat(" ",text2);
+        document.getElementById("demo").innerHTML = text3;
+        // loại bỏ khoảng trắng hai bên.
+        let text4 = "      Hello World!      ";
+        let text5 = text1.trim();
+        document.getElementById('').innerHTML = text4.trim();
+        // lăp lại
+        document.getElementById('').innerHTML = text.repeat(2);
+        // thay thế chuỗi
+        document.getElementById('').innerHTML = text.replace('zaq','cvb');
+        // chuyển chuỗi thành mảng
+        document.getElementById('').innerHTML = text.split(',')
+    </script>
+    <!-- tìm kiếm theo chuỗi -->
+    <script>
+        // tra về giá trị đầu
+        let txt = "Place local where 'locale' ocean";
+        console.log(txt.indexOf('locale'));
+        // trả về giá trị cuối.
+        console.log(txt.lastIndexOf('local'));
+        // tìm kiểm trả về vị trí chuỗi.
+        console.log(txt.search('local')); 
+        // tính số lần chuỗi xuất hiện.
+        console.log(txt.match('ain'));
+        // trả về một vòng lặp khớp một chuoix với 1 chuỗi.
+        console.log(txt.matchAll("cats")); // kết quả cats, cats.
+        // trả về true hoặc false
+        console.log(txt.includes("where"));
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const fruits = ["Banana", "Orange", "Apple", "Mango"];
+        // tìm kiếm theo giá trị truyền vào.
+        window.alert(fruits.indexOf("Apple"));
+        // trả về giá trị xuất hiện cuối cùng của phần tử đã chỉ định.
+        window.alert(fruits.lastIndexOf("Apple"));
+        // kiểm tra phần tử có xuất hiện trong mảng hay không.
+        window.alert(fruits.includes("Mango"));
+        // trả về giá trị của phần tử mảng đầu tiên vượt qua hàm kiểm tra
+        function myFunction(value, index, array) {
+            return value = "Mango";
+        }
+        window.alert(fruits.find(myFunction));
+        window.alert(fruits.findIndex(myFunction));
+       
+    </script>
+</body>
+</html>

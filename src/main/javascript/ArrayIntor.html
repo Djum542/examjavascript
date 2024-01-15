@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const number = [45,9, 16, 25];
+        let txt =""
+        function myFunction(value, index, array) {
+            txt += value +"<br";
+        }
+        window.alert(number.forEach(myFunction));
+        // tạo ra mảng mới
+        window.alert(number.map(myFunction));
+        // tạo ra mảng mới với các phần tử vượt qua bài kiêm tra
+        function test(value, index, array) {
+            return value > 18;
+        }
+        window.alert(number.filter(test));
+        // chạy một hàm trên các phần tử mnagr để tạo ra giá trị duy nhất
+        function sum(value, total) {
+            return total + value;
+        }
+        window.alert(number.reduce(sum));
+        window.alert(number.reduceRight(sum));
+        // kiểm tra nếu tất cả phẩn tử của mảng qua bài test
+        window.alert(number.every(test));
+        // kiểm tra nếu một vài giá trị qua bài test
+        window.alert(number.some(test));
+        // trả về mảng từ bất kì đối tượng nào.
+        window.alert(Array.from("abcdre"));
+        // trả về khóa của giá trị trong mảng 
+        window.alert(number.keys());
+        // đưa ra key và giá trị của phần tử
+        window.alert(number.entries());
+        // nối các mảng lại 
+        const q1 = ["Jan", "Feb", "Mar"];
+        const q2 = ["Apr", "May", "Jun"];
+        const q3 = ["Jul", "Aug", "Sep"];
+        const q4 = ["Oct", "Nov", "May"];
+
+        const year = [...q1, ...q2, ...q3, ...q4];
+        window.alert(year);
+
+    </script>
+</body>
+</html>
